@@ -9,8 +9,8 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler/apollotracing"
 	"github.com/99designs/gqlgen/graphql/handler/transport"
 	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/jesse-apollo/apollo-demo/graph"
-	"github.com/jesse-apollo/apollo-demo/graph/generated"
+	"github.com/jesse-apollo/apollo-demo/authors/graph"
+	"github.com/jesse-apollo/apollo-demo/authors/graph/generated"
 )
 
 const defaultPort = "8080"

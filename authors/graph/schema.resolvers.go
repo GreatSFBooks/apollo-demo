@@ -9,8 +9,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/jesse-apollo/apollo-demo/graph/generated"
-	"github.com/jesse-apollo/apollo-demo/graph/model"
+	"github.com/jesse-apollo/apollo-demo/authors/graph/generated"
+	"github.com/jesse-apollo/apollo-demo/authors/graph/model"
 )
 
 func (r *queryResolver) Authors(ctx context.Context) ([]*model.Author, error) {

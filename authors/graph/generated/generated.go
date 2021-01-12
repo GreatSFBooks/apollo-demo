@@ -13,7 +13,7 @@ import (
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
 	"github.com/99designs/gqlgen/plugin/federation/fedruntime"
-	"github.com/jesse-apollo/apollo-demo/graph/model"
+	"github.com/jesse-apollo/apollo-demo/authors/graph/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )
@@ -431,7 +431,7 @@ func (ec *executionContext) _Query_authors(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.([]*model.Author)
 	fc.Result = res
-	return ec.marshalNAuthor2ᚕᚖgithubᚗcomᚋmentatᚋapolloᚑdemoᚋgraphᚋmodelᚐAuthorᚄ(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚕᚖgithubᚗcomᚋjesseᚑapolloᚋapolloᚑdemoᚋauthorsᚋgraphᚋmodelᚐAuthorᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query__service(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -2027,7 +2027,7 @@ func (ec *executionContext) ___Type(ctx context.Context, sel ast.SelectionSet, o
 
 // region    ***************************** type.gotpl *****************************
 
-func (ec *executionContext) marshalNAuthor2ᚕᚖgithubᚗcomᚋmentatᚋapolloᚑdemoᚋgraphᚋmodelᚐAuthorᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Author) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthor2ᚕᚖgithubᚗcomᚋjesseᚑapolloᚋapolloᚑdemoᚋauthorsᚋgraphᚋmodelᚐAuthorᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Author) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -2051,7 +2051,7 @@ func (ec *executionContext) marshalNAuthor2ᚕᚖgithubᚗcomᚋmentatᚋapollo�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNAuthor2ᚖgithubᚗcomᚋmentatᚋapolloᚑdemoᚋgraphᚋmodelᚐAuthor(ctx, sel, v[i])
+			ret[i] = ec.marshalNAuthor2ᚖgithubᚗcomᚋjesseᚑapolloᚋapolloᚑdemoᚋauthorsᚋgraphᚋmodelᚐAuthor(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -2064,7 +2064,7 @@ func (ec *executionContext) marshalNAuthor2ᚕᚖgithubᚗcomᚋmentatᚋapollo�
 	return ret
 }
 
-func (ec *executionContext) marshalNAuthor2ᚖgithubᚗcomᚋmentatᚋapolloᚑdemoᚋgraphᚋmodelᚐAuthor(ctx context.Context, sel ast.SelectionSet, v *model.Author) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthor2ᚖgithubᚗcomᚋjesseᚑapolloᚋapolloᚑdemoᚋauthorsᚋgraphᚋmodelᚐAuthor(ctx context.Context, sel ast.SelectionSet, v *model.Author) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
