@@ -1,0 +1,19 @@
+
+# The query type, represents all of the entry points into our object graph
+
+
+type Query {
+    authors: [Author!]!
+    _service: _Service!
+}
+
+type Author {
+    name: String
+    yearBorn: Int!
+    yearDied: Int
+    whereBorn: String
+}
+
+type _Service {
+  sdl: String
+}

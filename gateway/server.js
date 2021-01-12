@@ -6,7 +6,9 @@ const PORT = process.env.PORT || 4000;
 
 const gateway = new ApolloGateway({
   serviceList: [
-    { name: "awards", url: "https://awards-dot-jll-apollo-test.uc.r.appspot.com" }
+    { name: "awards", url: "https://awards-dot-jll-apollo-test.uc.r.appspot.com" },
+    { name: "authors", url: "https://authors-dot-jll-apollo-test.uc.r.appspot.com/query" },
+    { name: "books", url: "https://books-dot-jll-apollo-test.uc.r.appspot.com" },
   ]
 });
 

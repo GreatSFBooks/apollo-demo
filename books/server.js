@@ -1,4 +1,5 @@
 const { ApolloServer, gql } = require('apollo-server');
+const { buildFederatedSchema } = require('@apollo/federation');
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -34,7 +35,7 @@ const books = [
     },
   ];
   
-  // Resolvers define the technique for fetching the types defined in the
+// Resolvers define the technique for fetching the types defined in the
 // schema. This resolver retrieves books from the "books" array above.
 const resolvers = {
     Query: {
@@ -42,11 +43,13 @@ const resolvers = {
     },
   };
   
-  // The ApolloServer constructor requires two parameters: your schema
+// The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({ 
+  schema: buildFederatedSchema([{ typeDefs, resolvers }])
+});
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 // The `listen` method launches a web server.
 server.listen({port:PORT}).then(({ url }) => {
