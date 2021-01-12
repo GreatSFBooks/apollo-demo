@@ -1,5 +1,0 @@
-runtime: nodejs14
-env_variables:
-  APOLLO_KEY: "service:jesse-test-1xc6kq:5nQzUR9Tmt8Wvh1P53dq0w"
-  APOLLO_GRAPH_VARIANT: "current"
-  APOLLO_SCHEMA_REPORTING: "false"
