@@ -6,9 +6,8 @@ jobs:
       - image: cimg/python:3.9
     steps:
       - checkout
-      - run: cd client/
-      - run: pip install -r requirements.txt
-      - run: python main.py
+      - run: pip install -r client/requirements.txt
+      - run: python client/main.py
 
 workflows:
   version: 2
