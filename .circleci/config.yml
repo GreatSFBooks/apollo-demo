@@ -16,8 +16,9 @@ jobs:
       - image: cimg/python:3.9-node
     steps:
       - checkout
+      - run: echo 'export SHORT_REV=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
       - run: sudo npm install -g apollo
-      - run: cd client/ && apollo client:check --includes="*.py" --variant=$APOLLO_GRAPH_VARIANT
+      - run: cd client/ && apollo client:check --clientName=iOS --clientVersion=$SHORT_REV --includes="*.py" --variant=$APOLLO_GRAPH_VARIANT
 
   check_books_schema:
     resource_class: small
