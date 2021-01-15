@@ -42,7 +42,7 @@ workflows:
   workweek:
     triggers:
       - schedule:
-          cron: "* 11-18 * * 1-5"
+          cron: "0,10,20,30,40,50 11-18 * * 1-5"
           filters:
             branches:
               only: master
