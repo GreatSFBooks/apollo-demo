@@ -11,14 +11,13 @@ jobs:
       - run: python client/main.py
 
   check_books_schema:
+    resource_class: small
     docker:
       - image: cimg/node:15.5
-
     steps:
       - checkout
-
+      - run: npm install -g apollo
       - run: cd books && npm install
-
       # Start the GraphQL server. If a different command is used to
       # start the server, use it in place of `npm start` here.
       - run:
