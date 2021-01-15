@@ -1,0 +1,5 @@
+runtime: nodejs14
+env_variables:
+  APOLLO_KEY: "{{APOLLO_KEY}}"
+  APOLLO_GRAPH_VARIANT: "{{APOLLO_VARIANT}}"
+  APOLLO_SCHEMA_REPORTING: "false"
