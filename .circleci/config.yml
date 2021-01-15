@@ -1,0 +1,21 @@
+jobs:
+  run_client:
+    docker:
+      - image: cimg/python:3.9
+    steps:
+      - checkout
+      - run: cd client/
+      - run: pip install -r requirements.txt
+      - run: python main.py
+workflows:
+  version: 2
+  random_run:
+    triggers:
+      - schedule:
+          cron: "*/2 * * * 11-23"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - run_client
