@@ -21,7 +21,7 @@ transport = RequestsHTTPTransport(
     }, verify=True, retries=3,
 )
 # Create a GraphQL client using the defined transport
-client = Client(transport=transport, fetch_schema_from_transport=True)
+client = Client(transport=transport, fetch_schema_from_transport=False)
 
 client_types = []
 queries = [

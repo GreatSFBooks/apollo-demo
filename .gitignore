@@ -1,0 +1,10 @@
+gateway/app.yaml
+books/app.yaml
+*/.env
+*/lib
+*/bin
+*/pyvenv.cfg
+authors/authors
+.vscode
+*/package-lock.json
+*/node_modules
