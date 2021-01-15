@@ -1,13 +1,13 @@
 [{
     "name": "Frank Herbert",
-    "yearBorn": 1951,
-    "yearDied": 1991,
-    "whereBorn": "New York"
+    "yearBorn": 1920,
+    "yearDied": 1986,
+    "whereBorn": "Tacoma, WA, USA"
 },
 {
     "name": "Isaac Asimov",
     "yearBorn": 1920,
     "yearDied": 1992,
-    "whereBorn": "Petrovichi, Russian"
+    "whereBorn": "Petrovichi, Russia"
 }
 ]

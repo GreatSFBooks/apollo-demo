@@ -26,12 +26,12 @@ const typeDefs = gql`
 
 const books = [
     {
-      title: 'The Awakening',
-      author: 'Kate Chopin',
+      title: 'Dune',
+      author: 'Frank Herberk',
     },
     {
-      title: 'City of Glass',
-      author: 'Paul Auster',
+      title: 'I, Robot',
+      author: 'Isaac Asimov',
     },
   ];
   
