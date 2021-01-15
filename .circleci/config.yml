@@ -10,6 +10,15 @@ jobs:
       - run: pip install -r client/requirements.txt
       - run: python client/main.py
 
+  check_client:
+    resource_class: small
+    docker:
+      - image: cimg/python:3.9-node
+    steps:
+      - checkout
+      - run: sudo npm install -g apollo
+      - run: cd client/ && apollo client:check --includes="*.py" --variant=$APOLLO_GRAPH_VARIANT
+
   check_books_schema:
     resource_class: small
     docker:
@@ -33,10 +42,14 @@ jobs:
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
       - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=books
 
+
+
 workflows:
   version: 2
   general:
     jobs:
+      - check_client:
+          context: ApolloCloud
       - check_books_schema:
           context: ApolloCloud
   workweek:
