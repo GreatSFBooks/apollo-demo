@@ -1,4 +1,4 @@
-version: 2.0
+version: 2.1
 
 jobs:
   run_client:
@@ -10,8 +10,36 @@ jobs:
       - run: pip install -r client/requirements.txt
       - run: python client/main.py
 
+  check_books_schema:
+    docker:
+      - image: cimg/node:15.5
+
+    steps:
+      - checkout
+
+      - run: cd books && npm install
+
+      # Start the GraphQL server. If a different command is used to
+      # start the server, use it in place of `npm start` here.
+      - run:
+          name: Starting server
+          command: cd books && node server.js
+          background: true
+
+      # Make sure the server has enough time to start up before running
+      # commands against it.
+      - run: sleep 5
+
+      # This command authenticates using the `APOLLO_KEY` environment
+      # variable. Specify your GraphQL endpoint's URL in your Apollo config.
+      - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=books
+
 workflows:
   version: 2
+  general:
+    jobs:
+      - check_books_schema:
+          context: ApolloCloud
   workweek:
     triggers:
       - schedule:
