@@ -1,4 +1,4 @@
-version: 2.1
+version: 2.0
 
 jobs:
   run_client:
@@ -9,15 +9,15 @@ jobs:
       - run: cd client/
       - run: pip install -r requirements.txt
       - run: python main.py
+
 workflows:
   version: 2
   workweek:
     triggers:
       - schedule:
-          cron: "*/2 * * * 11-23"
+          cron: "* 11-18 * * 1-5"
           filters:
             branches:
-              only:
-                - master
+              only: master
     jobs:
       - run_client
