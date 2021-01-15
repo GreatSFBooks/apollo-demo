@@ -18,6 +18,7 @@ jobs:
       - checkout
       - run: echo 'export SHORT_REV=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
       - run: sudo npm install -g apollo
+      - run: echo $SHORT_REV
       - run: cd client/ && apollo client:check --clientName=iOS --clientVersion=$SHORT_REV --includes="*.py" --variant=$APOLLO_GRAPH_VARIANT
 
   check_books_schema:
