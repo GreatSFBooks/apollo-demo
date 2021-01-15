@@ -1,3 +1,5 @@
+version: 2.1
+
 jobs:
   run_client:
     docker:
@@ -9,7 +11,7 @@ jobs:
       - run: python main.py
 workflows:
   version: 2
-  random_run:
+  workweek:
     triggers:
       - schedule:
           cron: "*/2 * * * 11-23"
