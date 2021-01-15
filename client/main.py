@@ -33,7 +33,8 @@ gql("query getBooks { books { title }}"),
 
 # Provide a GraphQL query
 query = random.choice(queries)
-
+print(query)
 # Execute the query on the transport
 result = client.execute(query)
+
 print(result)

@@ -3,4 +3,4 @@ service: books
 env_variables:
   APOLLO_KEY: "{{APOLLO_KEY}}"
   APOLLO_GRAPH_VARIANT: "{{APOLLO_VARIANT}}"
-  APOLLO_SCHEMA_REPORTING: "true"
+  APOLLO_SCHEMA_REPORTING: "false"
