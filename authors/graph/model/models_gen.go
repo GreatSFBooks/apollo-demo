@@ -3,8 +3,10 @@
 package model
 
 type Author struct {
-	Name      *string `json:"name"`
+	Name      string  `json:"name"`
 	YearBorn  int     `json:"yearBorn"`
 	YearDied  *int    `json:"yearDied"`
 	WhereBorn *string `json:"whereBorn"`
 }
+
+func (Author) IsEntity() {}

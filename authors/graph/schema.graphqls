@@ -4,16 +4,14 @@
 
 type Query {
     authors: [Author!]!
-    _service: _Service!
+
 }
 
-type Author {
-    name: String
+type Author @key(fields: "name") {
+    name: String!
     yearBorn: Int!
     yearDied: Int
     whereBorn: String
 }
 
-type _Service {
-  sdl: String
-}
+
