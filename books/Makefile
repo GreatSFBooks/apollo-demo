@@ -10,10 +10,10 @@ deploy:
 	gcloud app deploy
 
 check:
-	forever start server.js
+	forever start --pidFile /tmp/bookserver.pid server.js 
 	apollo service:check \
 	--endpoint=http://localhost:8080 \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=books
-	forever stop server.js
+	kill -9 $(cat /tmp/bookserver.pid | awk '{print $1}')
