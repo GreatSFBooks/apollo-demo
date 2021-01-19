@@ -1,5 +1,6 @@
 import graphene
-from graphene_federation import build_schema
+import logging
+from graphene_federation import build_schema, key, extend, external
 from middleware import TracingMiddleware
 
 from flask import Flask
@@ -7,13 +8,28 @@ from flask_graphql import GraphQLView
 
 app = Flask(__name__)
 
-
+@key(fields='awardName year')
 class Award(graphene.ObjectType):
     bookTitle = graphene.String()
     year = graphene.Int()
     authorName = graphene.String()
     awardTitle = graphene.String()
     awardName = graphene.String()
+
+@extend(fields='name')
+class Author(graphene.ObjectType):
+    name = external(graphene.String(required=True))
+    awards = graphene.List(Award)
+
+    def resolve_awards(parent, info):
+        logging.error(parent)
+        logging.error(info)
+        author_awards = []
+        for a in awards:
+            if a.authorName == parent.name:
+                author_awards.append(a)
+        return author_awards
+
 
 
 awards = [
@@ -31,7 +47,9 @@ class Query(graphene.ObjectType):
         return awards
 
 
-schema = build_schema(Query)
+
+
+schema = build_schema(Query, types=[Author])
 
 
 app.add_url_rule('/', view_func=GraphQLView.as_view(

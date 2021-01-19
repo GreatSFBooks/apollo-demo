@@ -63,15 +63,15 @@ const books = [
 ];
 
 function fetchBooksForAuthor(author) {
-  logger.info('Fetch books for author: ' + author);
-  logger.info(books);
+  //logger.info('Fetch books for author: ' + author);
+  //logger.info(books);
   var booksFound = [];
   for (var i = 0; i < books.length; i++) {
     if (books[i].author === author) {
       booksFound.push(books[i]);
     } 
   }
-  logger.info("Books found: " + booksFound.length);
+  //logger.info("Books found: " + booksFound.length);
   return booksFound;
 }
   
