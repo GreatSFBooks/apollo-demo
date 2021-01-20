@@ -43,7 +43,7 @@ jobs:
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
       - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=books
 
- check_authors_schema:
+  check_authors_schema:
     resource_class: small
     docker:
       - image: cimg/golang:1.15
