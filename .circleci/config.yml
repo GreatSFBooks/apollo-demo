@@ -43,6 +43,27 @@ jobs:
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
       - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=books
 
+ check_authors_schema:
+    resource_class: small
+    docker:
+      - image: cimg/golang:1.15
+    steps:
+      - checkout
+      - run: cd authors && go build
+      # Start the GraphQL server. If a different command is used to
+      # start the server, use it in place of `npm start` here.
+      - run:
+          name: Starting server
+          command: cd authors && ./authors
+          background: true
+
+      # Make sure the server has enough time to start up before running
+      # commands against it.
+      - run: sleep 5
+
+      # This command authenticates using the `APOLLO_KEY` environment
+      # variable. Specify your GraphQL endpoint's URL in your Apollo config.
+      - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
 
 
 workflows:
@@ -52,6 +73,8 @@ workflows:
       - check_client:
           context: ApolloCloud
       - check_books_schema:
+          context: ApolloCloud
+      - check_authors_schema:
           context: ApolloCloud
   workweek:
     triggers:
