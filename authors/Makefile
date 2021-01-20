@@ -14,7 +14,7 @@ deploy:
 
 check:
 	apollo service:check \
-	--localSchemaFile=graph/schema.graphqls \
+	--localSchemaFile=./graph/schema.graphqls \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=authors

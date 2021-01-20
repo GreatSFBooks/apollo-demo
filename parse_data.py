@@ -10,7 +10,7 @@ books = []
 awards = []
 authors = []
 
-other_source1 = json.loads(open('award_data_1.json').read())
+other_source1 = json.loads(open('fixtures/award_data_1.json').read())
 other_source1_db = {}
 
 # Index by work title
@@ -18,7 +18,7 @@ for work in other_source1:
     other_source1_db[work['title']] = work
 
 
-with open('data.csv') as csv_file:
+with open('fixtures/data.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
