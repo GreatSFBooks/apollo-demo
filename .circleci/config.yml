@@ -46,7 +46,7 @@ jobs:
   check_authors_schema:
     resource_class: small
     docker:
-      - image: cimg/golang:1.15
+      - image: cimg/go:1.15
     steps:
       - checkout
       - run: cd authors && go build
