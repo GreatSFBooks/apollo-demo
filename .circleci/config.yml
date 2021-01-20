@@ -50,21 +50,9 @@ jobs:
     steps:
       - checkout
       - run: sudo npm install -g apollo
-      - run: cd authors && go build
-      # Start the GraphQL server. If a different command is used to
-      # start the server, use it in place of `npm start` here.
-      - run:
-          name: Starting server
-          command: cd authors && ./authors
-          background: true
-
-      # Make sure the server has enough time to start up before running
-      # commands against it.
-      - run: sleep 5
-
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
+      - run: apollo service:check --localSchemaFile=./graph/schema.graphqls --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
 
 
 workflows:
