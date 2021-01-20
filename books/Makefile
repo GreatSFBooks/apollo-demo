@@ -10,10 +10,11 @@ deploy:
 	gcloud app deploy
 
 check:
-	PORT=4444 forever start --pidFile /tmp/bookserver.pid server.js 
+	PORT=4444 forever start -a --uid "book-check" --pidFile /tmp/bookserver.pid server.js 
+	sleep 1
 	apollo service:check \
 	--endpoint=http://localhost:4444 \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=books
-	kill -9 $(cat /tmp/bookserver.pid | awk '{print $1}')
+	forever stop --uid "book-check" server.js
