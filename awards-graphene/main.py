@@ -11,11 +11,14 @@ app = Flask(__name__)
 
 @key(fields='awardName year')
 class Award(graphene.ObjectType):
-    bookTitle = graphene.String()
-    year = graphene.Int()
-    authorName = graphene.String()
-    awardTitle = graphene.String()
-    awardName = graphene.String()
+    class Meta:
+        description = "An award for a work of literature."
+
+    bookTitle = graphene.String(description="The title of the book")
+    year = graphene.Int(description="The year the award was given.")
+    authorName = graphene.String(description="The author name.")
+    awardTitle = graphene.String(description="The title of the award (ie, 'Best Novel').")
+    awardName = graphene.String(description="The name of the award (ie, 'Hugo Award').")
 
 @extend(fields='name')
 class Author(graphene.ObjectType):
@@ -33,12 +36,16 @@ class Author(graphene.ObjectType):
 
 
 
-awards = [
-    Award(bookTitle= "Dune", year= 1966, awardName="Hugo Award", authorName= "Frank Herbert"),
-    Award(bookTitle= "Dune", year= 1966, awardName= "Nebula Award", authorName="Frank Herbert"),
-    Award(bookTitle= "The Left Hand of Darkness", year= 1970, awardName= "Nebula Award", authorName="Ursula K. Le Guin"),
-]
-
+awards = []
+award_data = json.loads(open('awards.json').read())
+for award in award_data:
+    awards.append(Award(
+        bookTitle=award['bookTitle'], 
+        year=award['year'], 
+        awardName=award['awardName'], 
+        awardTitle=award['awardTitle'],
+        authorName=award['authorName'] 
+    ))
 
 class Query(graphene.ObjectType):
 
@@ -70,15 +77,6 @@ app.add_url_rule('/graphql/batch', view_func=GraphQLView.as_view(
 ))
 
 if __name__ == '__main__':
-    awards = []
-    award_data = json.loads(open('awards.json').read())
-    for award in award_data:
-        awards.append(Award(
-           bookTitle=award['bookTitle'], 
-           year=award['year'], 
-           awardName=award['awardName'], 
-           awardTitle=award['awardTitle'],
-           authorName=award['authorName'] 
-        ))
+    
     
     app.run()
