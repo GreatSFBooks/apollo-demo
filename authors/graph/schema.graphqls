@@ -12,6 +12,7 @@ type Author @key(fields: "name") {
     yearBorn: Int!
     yearDied: Int
     whereBorn: String
+    biography: String
 }
 
 

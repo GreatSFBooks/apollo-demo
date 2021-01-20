@@ -1,0 +1,1189 @@
+[
+    {
+        "title": "The Three-Body Problem",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2015",
+        "author_first": "Cixin",
+        "author_last": "Liu",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Ancillary Justice",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "2014",
+        "author_first": "Ann",
+        "author_last": "Leckie",
+        "publisher": "Orbit Books"
+    },
+    {
+        "title": "Redshirts",
+        "winner": [
+            "Hugo",
+            "Locus"
+        ],
+        "year": "2013",
+        "author_first": "John",
+        "author_last": "Scalzi",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Among Others",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "2012",
+        "author_first": "Jo",
+        "author_last": "Walton",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "All Clear",
+        "winner": [
+            "Hugo",
+            "Nebula",
+            "Locus"
+        ],
+        "year": "2011",
+        "author_first": "Connie",
+        "author_last": "Willis",
+        "publisher": "Spectra Books"
+    },
+    {
+        "title": "Blackout",
+        "winner": [
+            "Hugo",
+            "Nebula",
+            "Locus"
+        ],
+        "year": "2011",
+        "author_first": "Connie",
+        "author_last": "Willis",
+        "publisher": "Spectra Books"
+    },
+    {
+        "title": "The Windup Girl",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "2010",
+        "author_first": "Paolo",
+        "author_last": "Bacigalupi",
+        "publisher": "Night Shade Books"
+    },
+    {
+        "title": "The City & The City",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2010",
+        "author_first": "China",
+        "author_last": "Mi'+String.fromCharCode(233)+'ville",
+        "publisher": "Del Rey Books"
+    },
+    {
+        "title": "The Graveyard Book",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2009",
+        "author_first": "Neil",
+        "author_last": "Gaiman",
+        "publisher": "HarperCollins"
+    },
+    {
+        "title": "The Yiddish Policemen's Union",
+        "winner": [
+            "Hugo",
+            "Nebula",
+            "Locus"
+        ],
+        "year": "2008",
+        "author_first": "Michael",
+        "author_last": "Chabon",
+        "publisher": "HarperCollins"
+    },
+    {
+        "title": "Rainbows End",
+        "winner": [
+            "Hugo",
+            "Locus"
+        ],
+        "year": "2007",
+        "author_first": "Vernor",
+        "author_last": "Vinge",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Spin",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2006",
+        "author_first": "Robert Charles",
+        "author_last": "Wilson",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Annihilation",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2015",
+        "author_first": "Jeff",
+        "author_last": "VanderMeer",
+        "publisher": "Farrar, Straus, and Giroux"
+    },
+    {
+        "title": "2312",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2013",
+        "author_first": "Kim Stanley",
+        "author_last": "Robinson",
+        "publisher": "Orbit Books"
+    },
+    {
+        "title": "Powers",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2009",
+        "author_first": "Ursula K.",
+        "author_last": "Le Guin",
+        "publisher": "Harcourt"
+    },
+    {
+        "title": "Seeker",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2007",
+        "author_first": "Jack",
+        "author_last": "McDevitt",
+        "publisher": "Ace Books"
+    },
+    {
+        "title": "Camouflage",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2006",
+        "author_first": "Joe",
+        "author_last": "Haldeman",
+        "publisher": "Analog Science Fiction and Fact"
+    },
+    {
+        "title": "Influx",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2015",
+        "author_first": "Daniel",
+        "author_last": "Suarez",
+        "publisher": "Dutton"
+    },
+    {
+        "title": "Nexus",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2014",
+        "author_first": "Ramez",
+        "author_last": "Naam",
+        "publisher": "Angry Robot"
+    },
+    {
+        "title": "Homeland",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2014",
+        "author_first": "Cory",
+        "author_last": "Doctorow",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Pirate Cinema",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2013",
+        "author_first": "Cory",
+        "author_last": "Doctorow",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Freedom Maze",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2012",
+        "author_first": "Delia",
+        "author_last": "Sherman",
+        "publisher": "Big Mouth House"
+    },
+    {
+        "title": "Ready Player One",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2012",
+        "author_first": "Ernest",
+        "author_last": "Cline",
+        "publisher": "Random House"
+    },
+    {
+        "title": "Darkship Thieves",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2011",
+        "author_first": "Sarah A.",
+        "author_last": "Hoyt",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "The Unincorporated Man",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2010",
+        "author_first": "Dani & Eytan",
+        "author_last": "Kollin",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Little Brother",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2009",
+        "author_first": "Cory",
+        "author_last": "Doctorow",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Ha'penny",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2008",
+        "author_first": "Jo",
+        "author_last": "Walton",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Gladiator",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2008",
+        "author_first": "Harry",
+        "author_last": "Turtledove",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Glasshouse",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2007",
+        "author_first": "Charles",
+        "author_last": "Stross",
+        "publisher": "Ace Books"
+    },
+    {
+        "title": "Learning The World",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2006",
+        "author_first": "Ken",
+        "author_last": "MacLeod",
+        "publisher": "Orbit Books"
+    },
+    {
+        "title": "Ancillary Sword",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2015",
+        "author_first": "Ann",
+        "author_last": "Leckie",
+        "publisher": "Orbit Books"
+    },
+    {
+        "title": "Abaddon's Gate",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2014",
+        "author_first": "James S. A.",
+        "author_last": "Corey",
+        "publisher": "Orbit Books"
+    },
+    {
+        "title": "Embassytown",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2012",
+        "author_first": "China",
+        "author_last": "Mi'+String.fromCharCode(233)+'ville",
+        "publisher": "Pan Macmillan"
+    },
+    {
+        "title": "Boneshaker",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2010",
+        "author_first": "Cherie",
+        "author_last": "Priest",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Anathem",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2009",
+        "author_first": "Neal",
+        "author_last": "Stephenson",
+        "publisher": "William Morrow and Company"
+    },
+    {
+        "title": "Accelerando",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2006",
+        "author_first": "Charles",
+        "author_last": "Stross",
+        "publisher": "Ace Books"
+    },
+    {
+        "title": "The System of the World",
+        "winner": [
+            "Locus",
+            "Prometheus"
+        ],
+        "year": "2005",
+        "author_first": "Neal",
+        "author_last": "Stephenson",
+        "publisher": "William Morrow"
+    },
+    {
+        "title": "Ilium",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2004",
+        "author_first": "Dan",
+        "author_last": "Simmons",
+        "publisher": "HarperCollins"
+    },
+    {
+        "title": "The Years of Rice and Salt",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2003",
+        "author_first": "Kim",
+        "author_last": "Stanley",
+        "publisher": "Bantam Books"
+    },
+    {
+        "title": "Passage",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2002",
+        "author_first": "Connie",
+        "author_last": "Willis",
+        "publisher": "Bantam Books"
+    },
+    {
+        "title": "The Telling",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2001",
+        "author_first": "Ursula K.",
+        "author_last": "Le Guin",
+        "publisher": "Harcourt"
+    },
+    {
+        "title": "Cryptonomicon",
+        "winner": [
+            "Locus"
+        ],
+        "year": "2000",
+        "author_first": "Neal",
+        "author_last": "Stephenson",
+        "publisher": "Avon"
+    },
+    {
+        "title": "To Say Nothing of the Dog",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1999",
+        "author_first": "Connie",
+        "author_last": "Willis",
+        "publisher": "Bantam Spectra"
+    },
+    {
+        "title": "The Rise of Endymion",
+        "winner": [
+            "Locus"
+        ],
+        "year": "1998",
+        "author_first": "Dan",
+        "author_last": "Simmons",
+        "publisher": "Bantam Books"
+    },
+    {
+        "title": "Blue Mars",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1997",
+        "author_first": "Kim Stanley",
+        "author_last": "Robinson",
+        "publisher": "Random House"
+    },
+    {
+        "title": "The Diamond Age",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1996",
+        "author_first": "Neal",
+        "author_last": "Stephenson",
+        "publisher": "Bantam Spectra"
+    },
+    {
+        "title": "Mirror Dance",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1995",
+        "author_first": "Lois McMaster",
+        "author_last": "Bujold",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "Green Mars",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1994",
+        "author_first": "Kim Stanley",
+        "author_last": "Robinson",
+        "publisher": "Bantam Dell"
+    },
+    {
+        "title": "Doomsday Book",
+        "winner": [
+            "Locus",
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1993",
+        "author_first": "Connie",
+        "author_last": "Willis",
+        "publisher": "Bantam Spectra"
+    },
+    {
+        "title": "Barrayar",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1992",
+        "author_first": "Lois McMaster",
+        "author_last": "Bujold",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "The Fall of Hyperion",
+        "winner": [
+            "Locus"
+        ],
+        "year": "1991",
+        "author_first": "Dan",
+        "author_last": "Simmons",
+        "publisher": "Doubleday"
+    },
+    {
+        "title": "Hyperion",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1990",
+        "author_first": "Dan",
+        "author_last": "Simmons",
+        "publisher": "Doubleday"
+    },
+    {
+        "title": "Cyteen",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1989",
+        "author_first": "C.J.",
+        "author_last": "Cherryh",
+        "publisher": "Warner Books"
+    },
+    {
+        "title": "The Uplift War",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1988",
+        "author_first": "David",
+        "author_last": "Brin",
+        "publisher": "Bantam Spectra"
+    },
+    {
+        "title": "Speaker for the Dead",
+        "winner": [
+            "Locus",
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1987",
+        "author_first": "Orson Scott",
+        "author_last": "Card",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Postman",
+        "winner": [
+            "Locus"
+        ],
+        "year": "1986",
+        "author_first": "David",
+        "author_last": "Brin",
+        "publisher": "Bantam Books"
+    },
+    {
+        "title": "The Integral Trees",
+        "winner": [
+            "Locus"
+        ],
+        "year": "1985",
+        "author_first": "Larry",
+        "author_last": "Niven",
+        "publisher": "Del Rey Books"
+    },
+    {
+        "title": "Startide Rising",
+        "winner": [
+            "Locus",
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1984",
+        "author_first": "David",
+        "author_last": "Brin",
+        "publisher": "Bantam Books"
+    },
+    {
+        "title": "Foundation's Edge",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1983",
+        "author_first": "Isaac",
+        "author_last": "Asimov",
+        "publisher": "Doubleday"
+    },
+    {
+        "title": "The Many Coloured Land",
+        "winner": [
+            "Locus"
+        ],
+        "year": "1982",
+        "author_first": "Julian",
+        "author_last": "May",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Snow Queen",
+        "winner": [
+            "Locus",
+            "Hugo"
+        ],
+        "year": "1981",
+        "author_first": "Joan D. ",
+        "author_last": "Vinge",
+        "publisher": "Dial Press"
+    },
+    {
+        "title": "Titan",
+        "winner": [
+            "Locus"
+        ],
+        "year": "1980",
+        "author_first": "John",
+        "author_last": "Varley",
+        "publisher": "Berkley Books"
+    },
+    {
+        "title": "Voyage from Yesteryear",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1983",
+        "author_first": "James P.",
+        "author_last": "Hogan",
+        "publisher": "Del Rey Books"
+    },
+    {
+        "title": "The Probability Broach",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1982",
+        "author_first": "L. Neil",
+        "author_last": "Smith",
+        "publisher": "Del Rey Books"
+    },
+    {
+        "title": "Wheels Within Wheels",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1979",
+        "author_first": "F. Paul",
+        "author_last": "Wilson",
+        "publisher": "Doubleday"
+    },
+    {
+        "title": "Downbelow Station",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "1982",
+        "author_first": "C.J.",
+        "author_last": "Cherryh",
+        "publisher": "DAW Books"
+    },
+    {
+        "title": "The Fountains of Paradise",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1980",
+        "author_first": "Arthur C.",
+        "author_last": "Clarke",
+        "publisher": "Victor Gollancz Ltd"
+    },
+    {
+        "title": "Dreamsnake",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1979",
+        "author_first": "Vonda N.",
+        "author_last": "McIntyre",
+        "publisher": "Houghton Mifflin"
+    },
+    {
+        "title": "No Enemy But Time",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1983",
+        "author_first": "Michael",
+        "author_last": "Bishop",
+        "publisher": "Timescape Books"
+    },
+    {
+        "title": "The Claw of the Conciliator",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1982",
+        "author_first": "Gene",
+        "author_last": "Wolfe",
+        "publisher": "Timescape Books"
+    },
+    {
+        "title": "Timescape",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1981",
+        "author_first": "Gregory",
+        "author_last": "Benford",
+        "publisher": "Simon & Schuster"
+    },
+    {
+        "title": "Sims",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2004",
+        "author_first": "F. Paul",
+        "author_last": "Wilson",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Night Watch",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2003",
+        "author_first": "Terry",
+        "author_last": "Pratchett",
+        "publisher": "Doubleday"
+    },
+    {
+        "title": "Psychohistorical Crisis",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2002",
+        "author_first": "Donald",
+        "author_last": "Kingsbury",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Forge of the Elders",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "2001",
+        "author_first": "L. Neil",
+        "author_last": "Smith",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "A Deepness in the Sky",
+        "winner": [
+            "Prometheus",
+            "Hugo"
+        ],
+        "year": "2000",
+        "author_first": "Vernor",
+        "author_last": "Vinge",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Golden Globe",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1999",
+        "author_first": "John",
+        "author_last": "Varley",
+        "publisher": "Ace Books"
+    },
+    {
+        "title": "The Stone Canal",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1998",
+        "author_first": "Ken",
+        "author_last": "MacLeod",
+        "publisher": "Legend Books"
+    },
+    {
+        "title": "Kings of the High Frontier",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1997",
+        "author_first": "Victor",
+        "author_last": "Koman",
+        "publisher": "Pulpless.com"
+    },
+    {
+        "title": "The Star Fraction",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1996",
+        "author_first": "Ken",
+        "author_last": "MacLeod",
+        "publisher": "Legend Books"
+    },
+    {
+        "title": "The Stars Are Also Fire",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1995",
+        "author_first": "Poul",
+        "author_last": "Anderson",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Pallas",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1994",
+        "author_first": "L. Neil",
+        "author_last": "Smith",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Multiplex Man",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1993",
+        "author_first": "James P.",
+        "author_last": "Hogan",
+        "publisher": "Bantam Spectra"
+    },
+    {
+        "title": "Fallen Angels",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1992",
+        "author_first": "Larry",
+        "author_last": "Niven",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "In the Country of the Blind",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1991",
+        "author_first": "Michael F.",
+        "author_last": "Flynn",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "Solomon's Knife",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1990",
+        "author_first": "Victor",
+        "author_last": "Koman",
+        "publisher": "Franklin Watts"
+    },
+    {
+        "title": "Moon of Ice",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1989",
+        "author_first": "Bran",
+        "author_last": "Linaweaver",
+        "publisher": "Arbor House"
+    },
+    {
+        "title": "The Jehovah Contract",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1988",
+        "author_first": "Victor",
+        "author_last": "Koman",
+        "publisher": "Franklin Watts"
+    },
+    {
+        "title": "Marooned in Realtime",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1987",
+        "author_first": "Vernor",
+        "author_last": "Vinge",
+        "publisher": "Analog Science Fiction and Fact"
+    },
+    {
+        "title": "The Cybernetic Samurai",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1986",
+        "author_first": "Victor",
+        "author_last": "Mil'+String.fromCharCode(225)+'n",
+        "publisher": "Arbor House"
+    },
+    {
+        "title": "The Rainbow Cadenza",
+        "winner": [
+            "Prometheus"
+        ],
+        "year": "1984",
+        "author_first": "J. Neil",
+        "author_last": "Schulman",
+        "publisher": "Simon & Schuster"
+    },
+    {
+        "title": "Jonathan Strange & Mr Norrell",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2005",
+        "author_first": "Susanna",
+        "author_last": "Clarke",
+        "publisher": "Bloomsbury Publishing"
+    },
+    {
+        "title": "Paladin of Souls",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "2004",
+        "author_first": "Lois McMaster",
+        "author_last": "Bujold",
+        "publisher": "Eos"
+    },
+    {
+        "title": "Hominids",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2003",
+        "author_first": "Robert J.",
+        "author_last": "Sawyer",
+        "publisher": "Analog Science Fiction and Fact"
+    },
+    {
+        "title": "American Gods",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "2002",
+        "author_first": "Neil",
+        "author_last": "Gaiman",
+        "publisher": "William Morrow and Company"
+    },
+    {
+        "title": "Harry Potter and the Goblet of Fire",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "2001",
+        "author_first": "J.K.",
+        "author_last": "Rowling",
+        "publisher": "Bloomsbury Publishing"
+    },
+    {
+        "title": "Forever Peace",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1998",
+        "author_first": "Joe",
+        "author_last": "Haldeman",
+        "publisher": "Ace Books"
+    },
+    {
+        "title": "A Fire Upon the Deep",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "1993",
+        "author_first": "Vernor",
+        "author_last": "Vinge",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "The Vor Game",
+        "winner": [
+            "Hugo"
+        ],
+        "year": "1991",
+        "author_first": "Lois McMaster",
+        "author_last": "Bujold",
+        "publisher": "Baen Books"
+    },
+    {
+        "title": "Ender's Game",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1986",
+        "author_first": "Orson Scott",
+        "author_last": "Card",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Neuromancer",
+        "winner": [
+            "Hugo",
+            "Nebula"
+        ],
+        "year": "1985",
+        "author_first": "William",
+        "author_last": "Gibson",
+        "publisher": "Ace Books"
+    },
+    {
+        "title": "The Speed of Dark",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2004",
+        "author_first": "Elizabeth",
+        "author_last": "Moon",
+        "publisher": "Balantine Books"
+    },
+    {
+        "title": "The Quantum Rose",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2002",
+        "author_first": "Catherine",
+        "author_last": "Asaro",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Darwin's Radio",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2001",
+        "author_first": "Greg",
+        "author_last": "Bear",
+        "publisher": "Del Rey Books"
+    },
+    {
+        "title": "Parable of the Talents",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "2000",
+        "author_first": "Octavia E.",
+        "author_last": "Butler",
+        "publisher": "Seven Stories Press"
+    },
+    {
+        "title": "The Moon and the Sun",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1998",
+        "author_first": "Vonda N.",
+        "author_last": "McIntyre",
+        "publisher": "Pocket Books"
+    },
+    {
+        "title": "Slow River",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1997",
+        "author_first": "Nicola",
+        "author_last": "Griffith",
+        "publisher": "Del Rey Books"
+    },
+    {
+        "title": "The Terminal Experiment",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1996",
+        "author_first": "Robert J.",
+        "author_last": "Sawyer",
+        "publisher": "HarperPrism"
+    },
+    {
+        "title": "Moving Mars",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1995",
+        "author_first": "Greg",
+        "author_last": "Bear",
+        "publisher": "Tor Books"
+    },
+    {
+        "title": "Red Mars",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1994",
+        "author_first": "Kim Stanley",
+        "author_last": "Robinson",
+        "publisher": "Bantam Spectra"
+    },
+    {
+        "title": "Stations of the Tide",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1992",
+        "author_first": "Michael",
+        "author_last": "Swanwick",
+        "publisher": "Asimov's Science Fiction"
+    },
+    {
+        "title": "Tehanu: The Last Book of Earthsea",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1991",
+        "author_first": "Ursula K.",
+        "author_last": "Le Guin",
+        "publisher": "Macmillan Publisher's"
+    },
+    {
+        "title": "The Healer's War",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1990",
+        "author_first": "Elizabeth Ann",
+        "author_last": "Scarborough",
+        "publisher": "Doubleday Foundation"
+    },
+    {
+        "title": "Falling Free",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1989",
+        "author_first": "Lois McMaster",
+        "author_last": "Bujold",
+        "publisher": "Analog Science Fact & Fiction"
+    },
+    {
+        "title": "The Falling Woman",
+        "winner": [
+            "Nebula"
+        ],
+        "year": "1988",
+        "author_first": "Pat",
+        "author_last": "Murphy",
+        "publisher": "Tor Books"
+    }
+]

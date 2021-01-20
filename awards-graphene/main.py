@@ -1,5 +1,6 @@
 import graphene
 import logging
+import json
 from graphene_federation import build_schema, key, extend, external
 from middleware import TracingMiddleware
 
@@ -69,4 +70,15 @@ app.add_url_rule('/graphql/batch', view_func=GraphQLView.as_view(
 ))
 
 if __name__ == '__main__':
+    awards = []
+    award_data = json.loads(open('awards.json').read())
+    for award in award_data:
+        awards.append(Award(
+           bookTitle=award['bookTitle'], 
+           year=award['year'], 
+           awardName=award['awardName'], 
+           awardTitle=award['awardTitle'],
+           authorName=award['authorName'] 
+        ))
+    
     app.run()

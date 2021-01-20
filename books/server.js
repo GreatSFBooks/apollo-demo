@@ -36,6 +36,8 @@ const typeDefs = gql`
   type Book @key(fields: "title") @key(fields: "author") {
     title: String
     author: String
+    publisher: String
+    published_date: String
   }
 
   extend type Author @key(fields: "name") {
@@ -51,16 +53,7 @@ const typeDefs = gql`
   }
 `;
 
-const books = [
-  {
-    title: 'Dune',
-    author: 'Frank Herbert',
-  },
-  {
-    title: 'I, Robot',
-    author: 'Isaac Asimov',
-  },
-];
+const books = require('./books.json');
 
 function fetchBooksForAuthor(author) {
   //logger.info('Fetch books for author: ' + author);

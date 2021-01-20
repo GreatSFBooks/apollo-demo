@@ -1,0 +1,762 @@
+[
+    {
+        "title": "Spinning Silver",
+        "author": "Naomi Novik",
+        "published_date": "10 July 2018"
+    },
+    {
+        "title": "The Calculating Stars",
+        "author": "Mary Robinette Kowal",
+        "published_date": "3 July 2018"
+    },
+    {
+        "title": "The Stone Sky",
+        "author": "N. K. Jemisin",
+        "published_date": "15 August 2017"
+    },
+    {
+        "title": "The Collapsing Empire",
+        "author": "John Scalzi",
+        "published_date": "21 March 2017"
+    },
+    {
+        "title": "The Obelisk Gate",
+        "author": "N. K. Jemisin",
+        "published_date": "16 August 2016"
+    },
+    {
+        "title": "All the Birds in the Sky",
+        "author": "Charlie Jane Anders",
+        "published_date": "26 January 2016"
+    },
+    {
+        "title": "Ancillary Mercy",
+        "author": "Ann Leckie",
+        "published_date": "6 October 2015"
+    },
+    {
+        "title": "The Fifth Season",
+        "author": "N. K. Jemisin",
+        "published_date": "4 August 2015"
+    },
+    {
+        "title": "Uprooted",
+        "author": "Naomi Novik",
+        "published_date": "2015"
+    },
+    {
+        "title": "Ancillary Sword",
+        "author": "Ann Leckie",
+        "published_date": "7 October 2014"
+    },
+    {
+        "title": "Annihilation",
+        "author": "Jeff VanderMeer",
+        "published_date": "1 February 2014"
+    },
+    {
+        "title": "The Goblin Emperor",
+        "author": "Katherine Addison",
+        "published_date": "2014"
+    },
+    {
+        "title": "Ancillary Justice",
+        "author": "Ann Leckie",
+        "published_date": "1 October 2013"
+    },
+    {
+        "title": "The Ocean at the End of the Lane",
+        "author": "Neil Gaiman",
+        "published_date": "18 June 2013"
+    },
+    {
+        "title": "Abaddon's Gate",
+        "author": "James S. A. Corey",
+        "published_date": "4 June 2013"
+    },
+    {
+        "title": "The Apocalypse Codex",
+        "author": "Charles Stross",
+        "published_date": "1 July 2012"
+    },
+    {
+        "title": "Redshirts",
+        "author": "John Scalzi",
+        "published_date": "5 June 2012"
+    },
+    {
+        "title": "2312",
+        "author": "Kim Stanley Robinson",
+        "published_date": "23 May 2012"
+    },
+    {
+        "title": "A Dance with Dragons",
+        "author": "George R. R. Martin",
+        "published_date": "12 July 2011"
+    },
+    {
+        "title": "Embassytown",
+        "author": "China Mi\u00e9ville",
+        "published_date": "28 April 2011"
+    },
+    {
+        "title": "Among Others",
+        "author": "Jo Walton",
+        "published_date": "18 January 2011"
+    },
+    {
+        "title": "Kraken",
+        "author": "China Mi\u00e9ville",
+        "published_date": "7 May 2010"
+    },
+    {
+        "title": "Blackout/All Clear",
+        "author": "Connie Willis",
+        "published_date": "2 February 2010"
+    },
+    {
+        "title": "Death's End",
+        "author": "Cixin Liu",
+        "published_date": "2010"
+    },
+    {
+        "title": "The Windup Girl",
+        "author": "Paolo Bacigalupi",
+        "published_date": "1 September 2009"
+    },
+    {
+        "title": "The City & the City",
+        "author": "China Mi\u00e9ville",
+        "published_date": "15 May 2009"
+    },
+    {
+        "title": "Boneshaker",
+        "author": "Cherie Priest",
+        "published_date": "2009"
+    },
+    {
+        "title": "The Graveyard Book",
+        "author": "Neil Gaiman",
+        "published_date": "30 September 2008"
+    },
+    {
+        "title": "Anathem",
+        "author": "Neal Stephenson",
+        "published_date": "9 September 2008"
+    },
+    {
+        "title": "Lavinia",
+        "author": "Ursula K. Le Guin",
+        "published_date": "21 April 2008"
+    },
+    {
+        "title": "The Three-Body problem",
+        "author": "Cixin Liu",
+        "published_date": "2008"
+    },
+    {
+        "title": "The Yiddish Policemen's Union",
+        "author": "Michael Chabon",
+        "published_date": "1 May 2007"
+    },
+    {
+        "title": "Making Money",
+        "author": "Terry Pratchett",
+        "published_date": "2007"
+    },
+    {
+        "title": "Powers",
+        "author": "Ursula K. Le Guin",
+        "published_date": "2007"
+    },
+    {
+        "title": "Rainbows End",
+        "author": "Vernor Vinge",
+        "published_date": "May 16, 2006"
+    },
+    {
+        "title": "The Privilege of the Sword",
+        "author": "Ellen Kushner",
+        "published_date": "2006"
+    },
+    {
+        "title": "Anansi Boys",
+        "author": "Neil Gaiman",
+        "published_date": "20 September 2005"
+    },
+    {
+        "title": "Accelerando",
+        "author": "Charles Stross",
+        "published_date": "5 July 2005"
+    },
+    {
+        "title": "Spin",
+        "author": "Robert Charles Wilson",
+        "published_date": "2005"
+    },
+    {
+        "title": "Seeker",
+        "author": "Jack McDevitt",
+        "published_date": "2005"
+    },
+    {
+        "title": "The Baroque Cycle",
+        "author": "Neal Stephenson",
+        "published_date": "2003-2004"
+    },
+    {
+        "title": "Jonathan Strange & Mr Norrell",
+        "author": "Susanna Clarke",
+        "published_date": "8 September 2004"
+    },
+    {
+        "title": "Iron Council",
+        "author": "China Mi\u00e9ville",
+        "published_date": "2004"
+    },
+    {
+        "title": "Camouflage",
+        "author": "Joe Haldeman",
+        "published_date": "2004"
+    },
+    {
+        "title": "Paladin of Souls",
+        "author": "Lois McMaster Bujold",
+        "published_date": "23 September 2003"
+    },
+    {
+        "title": "Ilium",
+        "author": "Dan Simmons",
+        "published_date": "2003"
+    },
+    {
+        "title": "The Scar",
+        "author": "China Mi\u00e9ville",
+        "published_date": "June 2002"
+    },
+    {
+        "title": "The Years of Rice and Salt",
+        "author": "Kim Stanley Robinson",
+        "published_date": "March 2002"
+    },
+    {
+        "title": "Hominids",
+        "author": "Robert J. Sawyer",
+        "published_date": "2002"
+    },
+    {
+        "title": "Speed of Dark",
+        "author": "Elizabeth Moon",
+        "published_date": "2002"
+    },
+    {
+        "title": "American Gods",
+        "author": "Neil Gaiman",
+        "published_date": "19 June 2001"
+    },
+    {
+        "title": "Passage",
+        "author": "Connie Willis",
+        "published_date": "2001"
+    },
+    {
+        "title": "The Telling",
+        "author": "Ursula K. Le Guin",
+        "published_date": "2000"
+    },
+    {
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "J. K. Rowling",
+        "published_date": "8 July 2000"
+    },
+    {
+        "title": "The Quantum Rose",
+        "author": "Catherine Asaro",
+        "published_date": "2000"
+    },
+    {
+        "title": "A Storm of Swords",
+        "author": "George R. R. Martin",
+        "published_date": "2000"
+    },
+    {
+        "title": "Darwin's Radio",
+        "author": "Greg Bear",
+        "published_date": "31 August 1999"
+    },
+    {
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J. K. Rowling",
+        "published_date": "8 July 1999"
+    },
+    {
+        "title": "Cryptonomicon",
+        "author": "Neal Stephenson",
+        "published_date": "1999"
+    },
+    {
+        "title": "A Deepness in the Sky",
+        "author": "Vernor Vinge",
+        "published_date": "1999"
+    },
+    {
+        "title": "A Clash of Kings",
+        "author": "George R. R. Martin",
+        "published_date": "1998"
+    },
+    {
+        "title": "Parable of the Talents",
+        "author": "Octavia E. Butler",
+        "published_date": "1998"
+    },
+    {
+        "title": "Earthquake Weather",
+        "author": "Tim Powers",
+        "published_date": "1997"
+    },
+    {
+        "title": "The Rise of Endymion",
+        "author": "Dan Simmons",
+        "published_date": "1997"
+    },
+    {
+        "title": "The Moon and the Sun",
+        "author": "Vonda McIntyre",
+        "published_date": "1997"
+    },
+    {
+        "title": "To Say Nothing of the Dog",
+        "author": "Cornie WIllis",
+        "published_date": "1997"
+    },
+    {
+        "title": "Forever Peace",
+        "author": "Joe Haldeman",
+        "published_date": "1997"
+    },
+    {
+        "title": "A Game of Thrones",
+        "author": "George R. R. Martin",
+        "published_date": "1 August 1996"
+    },
+    {
+        "title": "Blue Mars",
+        "author": "Kim Stanley Robinson",
+        "published_date": "1996"
+    },
+    {
+        "title": "The Terminal Experiment",
+        "author": "Robert J. Sawyer",
+        "published_date": "May 1995"
+    },
+    {
+        "title": "Alvin Journeyman",
+        "author": "Orson Scott Card",
+        "published_date": "1995"
+    },
+    {
+        "title": "Slow River",
+        "author": "Nicola Griffith",
+        "published_date": "1995"
+    },
+    {
+        "title": "The Diamond Age",
+        "author": "Neal Stephenson",
+        "published_date": "1995"
+    },
+    {
+        "title": "Brittle Innings",
+        "author": "Michael Bishop",
+        "published_date": "1994"
+    },
+    {
+        "title": "Mirror Dance",
+        "author": "Lois McMaster Bujold",
+        "published_date": "1994"
+    },
+    {
+        "title": "Moving Mars",
+        "author": "Greg Bear",
+        "published_date": "1993"
+    },
+    {
+        "title": "Green Mars",
+        "author": "Kim Stanley Robinson",
+        "published_date": "1993"
+    },
+    {
+        "title": "The Innkeeper's Song",
+        "author": "Peter S. Beagle",
+        "published_date": "1993"
+    },
+    {
+        "title": "Doomsday Book",
+        "author": "Connie Willis",
+        "published_date": "1992"
+    },
+    {
+        "title": "Last Call",
+        "author": "Tim Powers",
+        "published_date": "1992"
+    },
+    {
+        "title": "Red Mars",
+        "author": "Kim Stanley Robinson",
+        "published_date": "1992"
+    },
+    {
+        "title": "A Fire Upon the Deep",
+        "author": "Vernor Vinge",
+        "published_date": "1993"
+    },
+    {
+        "title": "Beauty",
+        "author": "Sheri S. Tepper",
+        "published_date": "1991"
+    },
+    {
+        "title": "Stations of the Tide",
+        "author": "Michael Swanwick",
+        "published_date": "1991"
+    },
+    {
+        "title": "Barrayar",
+        "author": "Lois McMaster Bujold",
+        "published_date": "1991"
+    },
+    {
+        "title": "The Fall of Hyperion",
+        "author": "Dan Simmons",
+        "published_date": "March 1990"
+    },
+    {
+        "title": "Tehanu",
+        "author": "Ursula K. Le Guin",
+        "published_date": "1990"
+    },
+    {
+        "title": "The Vor Game",
+        "author": "Lois McMaster Bujold",
+        "published_date": "1990"
+    },
+    {
+        "title": "Hyperion",
+        "author": "Dan Simmons",
+        "published_date": "1989"
+    },
+    {
+        "title": "Prentice Alvin",
+        "author": "Orson Scott Card",
+        "published_date": "1989"
+    },
+    {
+        "title": "Cyteen",
+        "author": "C.J. Cherryh",
+        "published_date": "May 1988"
+    },
+    {
+        "title": "The Healer's War",
+        "author": "Elizabeth Ann Scarborough",
+        "published_date": "1989"
+    },
+    {
+        "title": "Falling Free",
+        "author": "Lois McMaster Bujold",
+        "published_date": "April 1988"
+    },
+    {
+        "title": "Red Prophet",
+        "author": "Orson Scott Card",
+        "published_date": "1988"
+    },
+    {
+        "title": "The Uplift War",
+        "author": "David Brin",
+        "published_date": "1987"
+    },
+    {
+        "title": "Seventh Son",
+        "author": "Orson Scott Card",
+        "published_date": "1987"
+    },
+    {
+        "title": "The Falling Woman",
+        "author": "Pat Murphy",
+        "published_date": "1986"
+    },
+    {
+        "title": "Speaker for the Dead",
+        "author": "Orson Scott Card",
+        "published_date": "March 1986"
+    },
+    {
+        "title": "Soldier of the Mist",
+        "author": "Gene Wolfe",
+        "published_date": "October 1986"
+    },
+    {
+        "title": "Trumps of Doom",
+        "author": "Roger Zelazny",
+        "published_date": "1 May 1985"
+    },
+    {
+        "title": "Ender's Game",
+        "author": "Orson Scott Card",
+        "published_date": "15 January 1985"
+    },
+    {
+        "title": "The Postman",
+        "author": "David Brin",
+        "published_date": "1985"
+    },
+    {
+        "title": "Neuromancer",
+        "author": "William Gibson",
+        "published_date": "1 July 1984"
+    },
+    {
+        "title": "The Integral Trees",
+        "author": "Larry Niven",
+        "published_date": "1984"
+    },
+    {
+        "title": "Job: A Comedy of Justice",
+        "author": "Robert A. Heinlein",
+        "published_date": "1984"
+    },
+    {
+        "title": "The Mists of Avalon",
+        "author": "Marion Zimmer Bradley",
+        "published_date": "January 1983"
+    },
+    {
+        "title": "Startide Rising",
+        "author": "David Brin",
+        "published_date": "1983"
+    },
+    {
+        "title": "The Sword of the Lictor",
+        "author": "Gene Wolfe",
+        "published_date": "1982"
+    },
+    {
+        "title": "Foundation's Edge",
+        "author": "Isaac Asimov",
+        "published_date": "1982"
+    },
+    {
+        "title": "No Enemy But Time",
+        "author": "Michael Bishop",
+        "published_date": "1982"
+    },
+    {
+        "title": "Downbelow Station",
+        "author": "C. J. Cherryh",
+        "published_date": "1981"
+    },
+    {
+        "title": "The Claw of the Conciliator",
+        "author": "Gene Wolfe",
+        "published_date": "1981"
+    },
+    {
+        "title": "The Many-Colored Land",
+        "author": "Julian May",
+        "published_date": "1981"
+    },
+    {
+        "title": "Timescape",
+        "author": "Gregory Benford",
+        "published_date": "1980"
+    },
+    {
+        "title": "The Snow Queen",
+        "author": "Joan D. Vinge",
+        "published_date": "1980"
+    },
+    {
+        "title": "Lord Valentine's Castle",
+        "author": "Robert Silverberg",
+        "published_date": "1980"
+    },
+    {
+        "title": "Harpist in the Wind",
+        "author": "Patricia A. McKillip",
+        "published_date": "1979"
+    },
+    {
+        "title": "Titan",
+        "author": "John Varley",
+        "published_date": "1979"
+    },
+    {
+        "title": "The Fountains of Paradise",
+        "author": "Arthur C. Clarke",
+        "published_date": "1979"
+    },
+    {
+        "title": "Dreamsnake",
+        "author": "Vonda McIntyre",
+        "published_date": "1978"
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J. R. R. Tolkien",
+        "published_date": "15 September 1977"
+    },
+    {
+        "title": "Gateway",
+        "author": "Frederik Pohl",
+        "published_date": "1977"
+    },
+    {
+        "title": "Man Plus",
+        "author": "Frederik Pohl",
+        "published_date": "1976"
+    },
+    {
+        "title": "Where Late the Sweet Birds Sang",
+        "author": "Kate Wilhelm",
+        "published_date": "1976"
+    },
+    {
+        "title": "The Forever War",
+        "author": "Joe Haldeman",
+        "published_date": "1974"
+    },
+    {
+        "title": "The Dispossessed",
+        "author": "Ursula K. Le Guin",
+        "published_date": "1974"
+    },
+    {
+        "title": "Rendezvous with Rama",
+        "author": "Arthur C. Clarke",
+        "published_date": "1973"
+    },
+    {
+        "title": "The Gods Themselves",
+        "author": "Isaac Asimov",
+        "published_date": "1972"
+    },
+    {
+        "title": "To Your Scattered Bodies Go",
+        "author": "Philip Jos\u00e9 Farmer",
+        "published_date": "1972"
+    },
+    {
+        "title": "A Time of Changes",
+        "author": "Robert Silverberg",
+        "published_date": "1971"
+    },
+    {
+        "title": "Ringworld",
+        "author": "Larry Niven",
+        "published_date": "1970"
+    },
+    {
+        "title": "The Left Hand of Darkness",
+        "author": "Ursula K. Le Guin",
+        "published_date": "1969"
+    },
+    {
+        "title": "Rite of Passage",
+        "author": "Alexei Panshin",
+        "published_date": "1968"
+    },
+    {
+        "title": "Stand on Zanzibar",
+        "author": "John Brunner",
+        "published_date": "1968"
+    },
+    {
+        "title": "Lord of Light",
+        "author": "Roger Zelazny",
+        "published_date": "1967"
+    },
+    {
+        "title": "The Einstein Intersection",
+        "author": "Samuel R. Delany",
+        "published_date": "1967"
+    },
+    {
+        "title": "Flowers for Algernon",
+        "author": "Daniel Keyes",
+        "published_date": "March 1966"
+    },
+    {
+        "title": "The Moon Is a Harsh Mistress",
+        "author": "Robert A. Heinlein",
+        "published_date": "1966"
+    },
+    {
+        "title": "This Immortal",
+        "author": "Roger Zelazny",
+        "published_date": "1966"
+    },
+    {
+        "title": "Babel-17",
+        "author": "Samuel R. Delany",
+        "published_date": "1966"
+    },
+    {
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "published_date": "1 August 1965"
+    },
+    {
+        "title": "The Wanderer",
+        "author": "Fritz Leiber",
+        "published_date": "1964"
+    },
+    {
+        "title": "Way Station",
+        "author": "Clifford D. Simak",
+        "published_date": "1963"
+    },
+    {
+        "title": "The Man in the High Castle",
+        "author": "Philip K. Dick",
+        "published_date": "October 1962"
+    },
+    {
+        "title": "Stranger in a Strange Land",
+        "author": "Robert A. Heinlein",
+        "published_date": "1 June 1961"
+    },
+    {
+        "title": "A Canticle for Leibowitz",
+        "author": "Walter M. Miller Jr.",
+        "published_date": "1959"
+    },
+    {
+        "title": "Starship Troopers",
+        "author": "Robert A. Heinlein",
+        "published_date": "December 1959"
+    },
+    {
+        "title": "A Case of Consciense",
+        "author": "James Blish",
+        "published_date": "1958"
+    },
+    {
+        "title": "The Big Time",
+        "author": "Fritz Leiber",
+        "published_date": "1958"
+    },
+    {
+        "title": "Double Star",
+        "author": "Robert A. Heinlein",
+        "published_date": "1956"
+    },
+    {
+        "title": "They'd Rather Be Right",
+        "author": "Mark Clifton & Frank Riley",
+        "published_date": "1954"
+    },
+    {
+        "title": "The Demolished Man",
+        "author": "Alfred Bester",
+        "published_date": "1953"
+    }
+]

@@ -46,6 +46,7 @@ type DirectiveRoot struct {
 
 type ComplexityRoot struct {
 	Author struct {
+		Biography func(childComplexity int) int
 		Name      func(childComplexity int) int
 		WhereBorn func(childComplexity int) int
 		YearBorn  func(childComplexity int) int
@@ -88,6 +89,13 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 	ec := executionContext{nil, e}
 	_ = ec
 	switch typeName + "." + field {
+
+	case "Author.biography":
+		if e.complexity.Author.Biography == nil {
+			break
+		}
+
+		return e.complexity.Author.Biography(childComplexity), true
 
 	case "Author.name":
 		if e.complexity.Author.Name == nil {
@@ -226,6 +234,7 @@ type Author @key(fields: "name") {
     yearBorn: Int!
     yearDied: Int
     whereBorn: String
+    biography: String
 }
 
 
@@ -470,6 +479,38 @@ func (ec *executionContext) _Author_whereBorn(ctx context.Context, field graphql
 	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
 		ctx = rctx // use context from middleware stack in children
 		return obj.WhereBorn, nil
+	})
+	if err != nil {
+		ec.Error(ctx, err)
+		return graphql.Null
+	}
+	if resTmp == nil {
+		return graphql.Null
+	}
+	res := resTmp.(*string)
+	fc.Result = res
+	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
+}
+
+func (ec *executionContext) _Author_biography(ctx context.Context, field graphql.CollectedField, obj *model.Author) (ret graphql.Marshaler) {
+	defer func() {
+		if r := recover(); r != nil {
+			ec.Error(ctx, ec.Recover(ctx, r))
+			ret = graphql.Null
+		}
+	}()
+	fc := &graphql.FieldContext{
+		Object:     "Author",
+		Field:      field,
+		Args:       nil,
+		IsMethod:   false,
+		IsResolver: false,
+	}
+
+	ctx = graphql.WithFieldContext(ctx, fc)
+	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Biography, nil
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -1876,6 +1917,8 @@ func (ec *executionContext) _Author(ctx context.Context, sel ast.SelectionSet, o
 			out.Values[i] = ec._Author_yearDied(ctx, field, obj)
 		case "whereBorn":
 			out.Values[i] = ec._Author_whereBorn(ctx, field, obj)
+		case "biography":
+			out.Values[i] = ec._Author_biography(ctx, field, obj)
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
 		}

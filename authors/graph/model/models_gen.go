@@ -7,6 +7,7 @@ type Author struct {
 	YearBorn  int     `json:"yearBorn"`
 	YearDied  *int    `json:"yearDied"`
 	WhereBorn *string `json:"whereBorn"`
+	Biography *string `json:"biography"`
 }
 
 func (Author) IsEntity() {}

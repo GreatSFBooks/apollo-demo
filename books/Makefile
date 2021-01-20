@@ -10,9 +10,9 @@ deploy:
 	gcloud app deploy
 
 check:
-	forever start --pidFile /tmp/bookserver.pid server.js 
+	PORT=4444 forever start --pidFile /tmp/bookserver.pid server.js 
 	apollo service:check \
-	--endpoint=http://localhost:8080 \
+	--endpoint=http://localhost:4444 \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=books
