@@ -52,7 +52,7 @@ jobs:
       - run: sudo npm install -g apollo
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: apollo service:check --localSchemaFile=./graph/schema.graphqls --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
+      - run: apollo service:check --localSchemaFile=./authors/graph/schema.graphqls --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
 
 
 workflows:
