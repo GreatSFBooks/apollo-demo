@@ -46,9 +46,10 @@ jobs:
   check_authors_schema:
     resource_class: small
     docker:
-      - image: cimg/go:1.15
+      - image: cimg/go:1.15-node
     steps:
       - checkout
+      - run: sudo npm install -g apollo
       - run: cd authors && go build
       # Start the GraphQL server. If a different command is used to
       # start the server, use it in place of `npm start` here.
