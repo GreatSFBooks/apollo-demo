@@ -13,12 +13,16 @@ app = Flask(__name__)
 class Award(graphene.ObjectType):
     class Meta:
         description = "An award for a work of literature."
-
+    
     bookTitle = graphene.String(description="The title of the book")
+    title = graphene.String(deprecation_reason="Use awardTitle for all new clients.")
     year = graphene.Int(description="The year the award was given.")
     authorName = graphene.String(description="The author name.")
     awardTitle = graphene.String(description="The title of the award (ie, 'Best Novel').")
     awardName = graphene.String(description="The name of the award (ie, 'Hugo Award').")
+
+    def resolve_title(self, info):
+        return self.awardTitle
 
 @extend(fields='name')
 class Author(graphene.ObjectType):
@@ -33,7 +37,6 @@ class Author(graphene.ObjectType):
             if a.authorName == parent.name:
                 author_awards.append(a)
         return author_awards
-
 
 
 awards = []
@@ -54,11 +57,10 @@ class Query(graphene.ObjectType):
     def resolve_awards(root, info):
         return awards
 
+schema = graphene.Schema(query=Query)
 
-
-
-schema = build_schema(Query, types=[Author])
-
+print(schema)
+#schema = build_schema(Query, types=[Author])
 
 app.add_url_rule('/', view_func=GraphQLView.as_view(
     'graphql',
