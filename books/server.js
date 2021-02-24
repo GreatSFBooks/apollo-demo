@@ -38,6 +38,7 @@ const typeDefs = gql`
     " The title of the book. "
     title: String
     author: String
+    isbn: String
     publisher: String
     published_date: String
   }

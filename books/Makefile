@@ -1,4 +1,4 @@
-register-service:
+push:
 	apollo service:push \
 	--endpoint=https://books-dot-jll-apollo-test.uc.r.appspot.com \
 	--graph=jesse-test-1xc6kq \
@@ -10,12 +10,12 @@ deploy:
 	gcloud app deploy
 
 check:
-	PORT=4444 forever start -a --uid "book-check" --pidFile /tmp/bookserver.pid server.js 
+	PORT=4444 forever start -a --uid "book-check" --pidFile /tmp/bookserver.pid server.js 2>&1 1>/dev/null
 	sleep 2
 	apollo service:check \
 	--endpoint=http://localhost:4444 \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
-	--serviceName=books
+	--serviceName=books 2>/dev/null
 	sleep 2
-	forever stop --uid "book-check" server.js
+	forever stopall 2>&1 1>/dev/null
