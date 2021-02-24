@@ -34,9 +34,9 @@ const typeDefs = gql`
 
   # This "Book" type defines the queryable fields for every book in our data source.
   " A book (work of literature)."
-  type Book @key(fields: "title") @key(fields: "author") {
+  type Book @key(fields: "books_title") @key(fields: "author") {
     " The title of the book. "
-    title: String
+    books_title: String
     author: String
     isbn: String
     publisher: String
