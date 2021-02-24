@@ -1,4 +1,4 @@
-register-service:
+push:
 	apollo service:push \
 	--endpoint=https://awards-dot-jll-apollo-test.uc.r.appspot.com \
 	--graph=jesse-test-1xc6kq \

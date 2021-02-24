@@ -1,13 +1,13 @@
-# Authors Service
+# Awards Service
 
-This services knows about Science Fiction authors.
+The awards service knows about Science Fiction literature awards like
+the Hugo and Nebula. 
 
 # Setup
 
- 1. Add an Apollo `.env` file.
- 2. Run `go build`
+ 1. Install PIP dependencies: `pip install -r requirements.txt`
 
-# Deploy to AppEngine
+# Deploy
 
 `make deploy`
 
@@ -20,7 +20,3 @@ This services knows about Science Fiction authors.
 
  1. Edit the Makefile to specify your correct graph and variant.
  2. Run `make push`
-
-# Regen Project after Schema Change
-
- 1. Run `make regen`
