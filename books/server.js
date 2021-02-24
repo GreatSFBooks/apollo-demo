@@ -1,3 +1,4 @@
+const fs = require('fs');
 const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
 
@@ -29,32 +30,7 @@ dotenv.config();
 // A schema is a collection of type definitions (hence "typeDefs")
 // that together define the "shape" of queries that are executed against
 // your data.
-const typeDefs = gql`
-  # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
-
-  # This "Book" type defines the queryable fields for every book in our data source.
-  " A book (work of literature)."
-  type Book @key(fields: "books_title") @key(fields: "author") {
-    " The title of the book. "
-    books_title: String
-    author: String
-    isbn: String
-    publisher: String
-    published_date: String
-  }
-
-  extend type Author @key(fields: "name") {
-    name: String! @external
-    books: [Book]
-  }
-
-  # The "Query" type is special: it lists all of the available queries that
-  # clients can execute, along with the return type for each. In this
-  # case, the "books" query returns an array of zero or more Books (defined above).
-  type Query {
-    books: [Book]
-  }
-`;
+const typeDefs = gql(fs.readFileSync('schema.graphql', 'utf8'))
 
 const books = require('./books.json');
 
