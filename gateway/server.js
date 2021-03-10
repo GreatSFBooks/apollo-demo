@@ -4,7 +4,6 @@ import { createLogger } from "bunyan";
 import { LoggingBunyan } from "@google-cloud/logging-bunyan";
 import { ApolloServerPluginInlineTrace } from "apollo-server-core";
 
-
 // Creates a Bunyan Cloud Logging client
 const loggingBunyan = new LoggingBunyan();
 
@@ -22,7 +21,6 @@ const logger = createLogger({
   ],
 });
 
-
 const PORT = process.env.PORT || 4000;
 
 const gateway = new ApolloGateway(/*{
@@ -36,11 +34,12 @@ const gateway = new ApolloGateway(/*{
 const server = new ApolloServer({
   gateway,
   debug:true,
+  introspection: true, // Not for prod
+  playground:true, // Not for prod
   subscriptions: false,
-  logger: logger,
-  plugins: [ApolloServerPluginInlineTrace()]
+  logger: logger
 });
 
 server.listen({ port: PORT }).then(({ url }) => {
   console.log(`Server ready at ${url}`);
-});
+}); 
