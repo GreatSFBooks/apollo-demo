@@ -2,7 +2,6 @@ import { ApolloGateway } from "@apollo/gateway";
 import { ApolloServer } from "apollo-server";
 import { createLogger } from "bunyan";
 import { LoggingBunyan } from "@google-cloud/logging-bunyan";
-import { ApolloServerPluginInlineTrace } from "apollo-server-core";
 
 // Creates a Bunyan Cloud Logging client
 const loggingBunyan = new LoggingBunyan();

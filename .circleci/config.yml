@@ -20,6 +20,7 @@ jobs:
       - run: sudo npm install -g apollo
       - run: cd client/ && apollo client:check --clientName=iOS --clientVersion=$SHORT_REV --includes="*.py" --variant=$APOLLO_GRAPH_VARIANT
 
+  # This is a Apollo Server based service
   check_books_schema:
     resource_class: small
     docker:
@@ -28,21 +29,12 @@ jobs:
       - checkout
       - run: sudo npm install -g apollo
       - run: cd books && npm install
-      # Start the GraphQL server. If a different command is used to
-      # start the server, use it in place of `npm start` here.
-      - run:
-          name: Starting server
-          command: cd books && node server.js
-          background: true
-
-      # Make sure the server has enough time to start up before running
-      # commands against it.
-      - run: sleep 5
 
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=books
+      - run: apollo service:check --localSchemaFile=./books/schema.graphql --graph=jesse-test-1xc6kq --variant=current --serviceName=books
 
+  # This is a GoLang based service
   check_authors_schema:
     resource_class: small
     docker:
@@ -54,6 +46,29 @@ jobs:
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
       - run: apollo service:check --localSchemaFile=./authors/graph/schema.graphqls --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
 
+  # An example of a schema-as-code service schema check
+  #check_service_schema:
+  #  resource_class: small
+  #  docker:
+  #    - image: cimg/node:15.5
+  #  steps:
+  #    - checkout
+  #    - run: sudo npm install -g apollo
+  #    - run: cd books && npm install
+  #    # Start the GraphQL server. If a different command is used to
+  #    # start the server, use it in place of `npm start` here.
+  #    - run:
+  #        name: Starting server
+  #        command: cd books && node server.js
+  #        background: true
+  #
+  #    # Make sure the server has enough time to start up before running
+  #    # commands against it.
+  #    - run: sleep 5
+  #
+  #    # This command authenticates using the `APOLLO_KEY` environment
+  #    # variable. Specify your GraphQL endpoint's URL in your Apollo config.
+  #    - run: apollo service:check --endpoint=http://localhost:8080 --graph=jesse-test-1xc6kq --variant=current --serviceName=books
 
 workflows:
   version: 2
