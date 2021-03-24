@@ -1,6 +1,6 @@
 push:
 	apollo service:push \
-	--localSchemaFile=schema.graphql \ \
+	--localSchemaFile=schema.graphql \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=books \
