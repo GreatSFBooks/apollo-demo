@@ -59,9 +59,6 @@ class Query(graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 
-print(schema)
-#schema = build_schema(Query, types=[Author])
-
 app.add_url_rule('/', view_func=GraphQLView.as_view(
     'graphql',
     schema=schema,
@@ -79,6 +76,4 @@ app.add_url_rule('/graphql/batch', view_func=GraphQLView.as_view(
 ))
 
 if __name__ == '__main__':
-    
-    
     app.run()

@@ -14,4 +14,10 @@ check:
 	--localSchemaFile=schema.graphql \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
-	--serviceName=books 
+	--serviceName=books
+#	--validationPeriod=20736000 
+
+rcheck:
+	rover subgraph check jesse-test-1xc6kq \
+	--schema=schema.graphql \
+	--name=books 

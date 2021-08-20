@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
+const { ApolloServerPluginInlineTrace } = require('apollo-server-core');
 
 const dotenv = require('dotenv');
 const bunyan = require('bunyan');
@@ -63,7 +64,8 @@ const resolvers = {
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
 const server = new ApolloServer({ 
-  schema: buildFederatedSchema([{ typeDefs, resolvers }])
+  schema: buildFederatedSchema([{ typeDefs, resolvers }]),
+  plugins: [ApolloServerPluginInlineTrace()]
 });
 
 const PORT = process.env.PORT || 8080;

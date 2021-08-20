@@ -25,7 +25,7 @@ client = Client(transport=transport, fetch_schema_from_transport=False)
 
 client_types = []
 queries = [
-gql("query getAwards { awards { awardName }}"),
+gql("query getAwards { awards { awardTitle }}"),
 gql("query getAuthors { authors { name }}"),
 gql("query getBooks { books { title }}"),
 ]
@@ -37,5 +37,3 @@ for i in range(random.randint(50,100)):
     print(query)
     # Execute the query on the transport
     result = client.execute(query)
-
-    print(result)
