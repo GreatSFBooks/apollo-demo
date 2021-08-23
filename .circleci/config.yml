@@ -32,7 +32,7 @@ jobs:
 
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: rover subgraph check jesse-test-1xc6kq --schema=./books/schema.graphql name=books 
+      - run: ~.rover/bin/rover subgraph check jesse-test-1xc6kq --schema=./books/schema.graphql name=books 
 
   # This is a GoLang based service
   check_authors_schema:
@@ -44,7 +44,7 @@ jobs:
       - run: curl -sSL https://rover.apollo.dev/nix/latest | sh
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: rover subgraph check jesse-test-1xc6kq --schema=./authors/graph/schema.graphqls name=authors
+      - run: ~.rover/bin/rover subgraph check jesse-test-1xc6kq --schema=./authors/graph/schema.graphqls name=authors
 
   # An example of a schema-as-code service schema check
   #check_service_schema:
