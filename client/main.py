@@ -25,11 +25,11 @@ client = Client(transport=transport, fetch_schema_from_transport=False)
 
 client_types = []
 queries = [
-gql("query getAwards { awards { awardTitle }}"),
+gql("query getAwards { awards { awardTitle, awardName, year }}"),
 gql("query getAwardName { awards { awardName }}"),
 gql("query getAwardDetails { awards { awardName, title }}"),
-gql("query getAuthors { authors { name }}"),
-gql("query getBooks { books { title }}"),
+gql("query getAuthors { authors { name, yearBorn, biography }}"),
+gql("query getBooks { books { title, author, publisher }}"),
 gql("query getAuthorsDetail { authors { name, books { title }, awards { awardName } }}"),
 gql("query getHomePageDetail { authors { name, books { title }, awards { awardName } }, books { title }, awards { awardName, title } }"),
 ]
