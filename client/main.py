@@ -30,6 +30,7 @@ gql("query getAwardName { awards { awardName }}"),
 gql("query getAwardDetails { awards { awardName, title }}"),
 gql("query getAuthors { authors { name }}"),
 gql("query getBooks { books { title }}"),
+gql("query getAuthorsDetail { authors { name, books { title }, awards { awardName } }}"),
 ]
 
 
