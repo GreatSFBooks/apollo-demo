@@ -27,7 +27,7 @@ jobs:
       - image: cimg/node:15.5
     steps:
       - checkout
-      - run: npm i -g @apollo/rover
+      - run: curl -sSL https://rover.apollo.dev/nix/latest | sh
       - run: cd books && npm install
 
       # This command authenticates using the `APOLLO_KEY` environment
@@ -41,7 +41,7 @@ jobs:
       - image: cimg/go:1.15-node
     steps:
       - checkout
-      - run: npm i -g @apollo/rover
+      - run: curl -sSL https://rover.apollo.dev/nix/latest | sh
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
       - run: rover subgraph check jesse-test-1xc6kq --schema=./authors/graph/schema.graphqls name=authors
