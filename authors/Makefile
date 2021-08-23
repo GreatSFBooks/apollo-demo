@@ -18,3 +18,8 @@ check:
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=authors
+
+rcheck:
+	rover subgraph check jesse-test-1xc6kq \
+	--schema=./graph/schema.graphqls \
+	--name=authors
