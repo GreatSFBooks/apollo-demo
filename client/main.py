@@ -26,12 +26,14 @@ client = Client(transport=transport, fetch_schema_from_transport=False)
 client_types = []
 queries = [
 gql("query getAwards { awards { awardTitle }}"),
+gql("query getAwardName { awards { awardName }}"),
+gql("query getAwardDetails { awards { awardName, title }}"),
 gql("query getAuthors { authors { name }}"),
 gql("query getBooks { books { title }}"),
 ]
 
 
-for i in range(random.randint(50,100)):
+for i in range(random.randint(100,200)):
     # Provide a GraphQL query
     query = random.choice(queries)
     print(query)
