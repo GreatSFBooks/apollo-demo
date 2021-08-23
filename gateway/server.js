@@ -1,4 +1,4 @@
-import { ApolloGateway } from "@apollo/gateway";
+import { ApolloGateway, RemoteGraphQLDataSource } from "@apollo/gateway";
 import { ApolloServer } from "apollo-server";
 ///import { createLogger } from "bunyan";
 ///import { LoggingBunyan } from "@google-cloud/logging-bunyan";
@@ -23,12 +23,22 @@ import  dotenv  from "dotenv";
   ],
 });*/
 
+class AuthenticatedDataSource extends RemoteGraphQLDataSource {
+  willSendRequest({ request, context }) {
+    request.http.headers.set('x-apollo-tracing', 1);
+  }
+}
+
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
 const APOLLO_KEY = process.env.APOLLO_KEY || 4000;
 
-const gateway = new ApolloGateway();
+const gateway = new ApolloGateway({
+  buildService({ name, url }) {
+    return new AuthenticatedDataSource({ url });
+  },
+});
 
 const server = new ApolloServer({
   gateway,
@@ -36,6 +46,7 @@ const server = new ApolloServer({
   introspection: true, // Not for prod
   playground: true, // Not for prod
   subscriptions: false,
+  
   //logger: logger,
   plugins: [ApolloServerPluginInlineTrace()]
 });
