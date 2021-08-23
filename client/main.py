@@ -38,6 +38,6 @@ gql("query getHomePageDetail { authors { name, books { title }, awards { awardNa
 for i in range(random.randint(100,200)):
     # Provide a GraphQL query
     query = random.choice(queries)
-    print(query)
+    #print(query)
     # Execute the query on the transport
     result = client.execute(query)
