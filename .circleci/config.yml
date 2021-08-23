@@ -27,12 +27,12 @@ jobs:
       - image: cimg/node:15.5
     steps:
       - checkout
-      - run: sudo npm install -g apollo
+      - run: sudo npm i -g @apollo/rover
       - run: cd books && npm install
 
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: apollo service:check --localSchemaFile=./books/schema.graphql --graph=jesse-test-1xc6kq --variant=current --serviceName=books
+      - run: rover subgraph check jesse-test-1xc6kq --schema=./books/schema.graphql name=books 
 
   # This is a GoLang based service
   check_authors_schema:
@@ -41,10 +41,10 @@ jobs:
       - image: cimg/go:1.15-node
     steps:
       - checkout
-      - run: sudo npm install -g apollo
+      - run: sudo npm i -g @apollo/rover
       # This command authenticates using the `APOLLO_KEY` environment
       # variable. Specify your GraphQL endpoint's URL in your Apollo config.
-      - run: apollo service:check --localSchemaFile=./authors/graph/schema.graphqls --graph=jesse-test-1xc6kq --variant=current --serviceName=authors
+      - run: rover subgraph check jesse-test-1xc6kq --schema=./authors/graph/schema.graphqls name=authors
 
   # An example of a schema-as-code service schema check
   #check_service_schema:
