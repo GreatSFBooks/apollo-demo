@@ -40,7 +40,7 @@ function fetchAwardsForAuthor(author) {
   //logger.info(awards);
   var awardsFound = [];
   for (var i = 0; i < awards.length; i++) {
-    if (awards[i].author === author) {
+    if (awards[i].authorName === author) {
         awardsFound.push(awards[i]);
     } 
   }
