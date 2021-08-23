@@ -1,0 +1,5 @@
+runtime: nodejs14
+service: awards
+
+env_variables:
+  APOLLO_SCHEMA_REPORTING: "false"

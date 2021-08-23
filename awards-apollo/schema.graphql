@@ -1,0 +1,17 @@
+extend type Author   @key(fields: "name") {   
+    name: String! @external   
+    awards: [Award] 
+}  
+
+type Award  @key(fields: "awardName year") {   
+    bookTitle: String   
+    title: String @deprecated(reason: "Use awardTitle for all new clients.")   
+    year: Int   
+    authorName: String   
+    awardTitle: String   
+    awardName: String 
+}  
+
+type Query {   
+    awards: [Award] 
+} 

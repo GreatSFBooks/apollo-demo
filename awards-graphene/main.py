@@ -30,8 +30,8 @@ class Author(graphene.ObjectType):
     awards = graphene.List(Award)
 
     def resolve_awards(parent, info):
-        logging.error(parent)
-        logging.error(info)
+        #logging.error(parent)
+        #logging.error(info)
         author_awards = []
         for a in awards:
             if a.authorName == parent.name:
@@ -39,8 +39,12 @@ class Author(graphene.ObjectType):
         return author_awards
 
 
+
+
+
 awards = []
 award_data = json.loads(open('awards.json').read())
+
 for award in award_data:
     awards.append(Award(
         bookTitle=award['bookTitle'], 

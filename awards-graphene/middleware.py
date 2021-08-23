@@ -6,13 +6,13 @@ class TracingMiddleware(object):
     DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
     def __init__(self):
-        print("init")
+        #print("init")
         self.resolver_stats = list()
         self.reset()
 
     def reset(self):
-        print("reset")
-        self.start_time = None
+        #print("reset")
+        self.start_time = self.now()
         self.end_time = None
         self.parsing_start_time = None
         self.parsing_end_time = None
@@ -20,7 +20,7 @@ class TracingMiddleware(object):
         self.validation_end_time = None
 
     def start(self):
-        print("start")
+        #print("start")
         self.reset()
         self.start_time = self.now()
 
@@ -28,14 +28,14 @@ class TracingMiddleware(object):
         self.end_time = self.now()
 
     def parsing_start(self):
-        print("parsing st")
+        #print("parsing st")
         self.parsing_start_time = self.now()
 
     def parsing_end(self):
         self.parsing_end_time = self.now()
 
     def validation_start(self):
-        print("val st")
+        #print("val st")
         self.validation_start_time = self.now()
 
     def validation_end(self):
@@ -87,10 +87,10 @@ class TracingMiddleware(object):
 
     def _after_resolve(self, start_time, resolver_stats, info, data):
             end = time.time()
-            print("1")
+            #print("1")
             elapsed_ms = (end - start_time) * 1000
-            print("2")
-            print(self.start_time)
+            #print("2")
+            #print(self.start_time)
             stat = {
                 "path": info.path,
                 "parentType": str(info.parent_type),
@@ -99,9 +99,9 @@ class TracingMiddleware(object):
                 "startOffset": self.now() - self.start_time,
                 "duration": elapsed_ms,
             }
-            print("3")
+            #print("3")
             resolver_stats.append(stat)
-            print("4")
+            #print("4")
             self.reset()
             return data
 
