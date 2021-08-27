@@ -1,0 +1,1 @@
+{"query":"query LoadTest {\n  books {\n    title\n  }\n}\n","variables":{},"operationName":"LoadTest"}

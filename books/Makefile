@@ -5,6 +5,9 @@ push:
 	--variant=current \
 	--serviceName=books \
 	--serviceURL=https://books-dot-jll-apollo-test.uc.r.appspot.com
+publish:
+	rover subgraph publish jesse-test-1xc6kq@current --schema ./schema.graphql \
+		--name books --routing-url https://books-dot-jll-apollo-test.uc.r.appspot.com
 
 deploy:
 	gcloud app deploy

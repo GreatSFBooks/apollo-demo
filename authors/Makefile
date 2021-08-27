@@ -6,6 +6,11 @@ register-service:
 	--serviceName=authors \
 	--serviceURL=https://authors-dot-jll-apollo-test.uc.r.appspot.com/query
 
+publish:
+	rover subgraph publish jesse-test-1xc6kq@current --schema ./graph/schema.graphqls \
+		--name authors --routing-url https://authors-dot-jll-apollo-test.uc.r.appspot.com/query
+
+
 regen:
 	go run github.com/99designs/gqlgen init
 

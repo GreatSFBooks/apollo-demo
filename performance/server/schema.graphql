@@ -13,21 +13,10 @@ type Book @key(fields: "title") @key(fields: "author") {
     published_date: String
 }
 
-extend type Author @key(fields: "name") {
-    name: String! @external
-    " The books by an author. "
-    books: [Book]
-}
-
 # The "Query" type is special: it lists all of the available queries that
 # clients can execute, along with the return type for each. In this
 # case, the "books" query returns an array of zero or more Books (defined above).
 type Query {
     " Get a list of books. "
     books: [Book]
-}
-
-type Mutation {
-    " Create a new review for a book. "
-    addReview(bookTitle: String!, review: String!, rating: Int!): Boolean!
 }

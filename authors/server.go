@@ -6,9 +6,9 @@ import (
 	"os"
 
 	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/handler/apollotracing"
 	"github.com/99designs/gqlgen/graphql/handler/transport"
 	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/jesse-apollo/apollo-demo/authors/apollo_trace"
 	"github.com/jesse-apollo/apollo-demo/authors/graph"
 	"github.com/jesse-apollo/apollo-demo/authors/graph/generated"
 )
@@ -23,7 +23,7 @@ func main() {
 
 	srv := handler.NewDefaultServer(generated.NewExecutableSchema(generated.Config{Resolvers: &graph.Resolver{}}))
 	srv.AddTransport(transport.POST{})
-	srv.Use(apollotracing.Tracer{})
+	srv.Use(apollo_trace.Tracer{})
 
 	http.Handle("/", playground.Handler("GraphQL playground", "/query"))
 	http.Handle("/query", srv)

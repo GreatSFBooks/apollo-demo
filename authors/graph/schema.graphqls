@@ -3,15 +3,21 @@
 
 
 type Query {
+    " Get a list of authors. "
     authors: [Author!]!
-
 }
 
+" An author of a piece of literature. "
 type Author @key(fields: "name") {
+    " The name of the author. "
     name: String!
+    " The year the author was born. "
     yearBorn: Int!
+    " The year the author died (or null if alive)."
     yearDied: Int
+    " Where the author was born, if known. "
     whereBorn: String
+    " A short biography of the author. "
     biography: String
 }
 

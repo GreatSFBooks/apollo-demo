@@ -36,6 +36,7 @@ const APOLLO_KEY = process.env.APOLLO_KEY || 4000;
 
 const gateway = new ApolloGateway({
   buildService({ name, url }) {
+    console.log("Build service: " + url);
     return new AuthenticatedDataSource({ url });
   },
 });

@@ -1,0 +1,16 @@
+version: "3.9"
+   
+services:
+  server:
+    image: jesse/server
+    ports:
+      - "10100:8080"
+  gateway:
+    image: jesse/gateway
+    environment:
+      - APOLLO_KEY
+      - APOLLO_GRAPH_REF
+    ports:
+      - "10101:4000"
+    depends_on:
+      - server

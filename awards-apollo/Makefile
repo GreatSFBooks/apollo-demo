@@ -6,6 +6,11 @@ push:
 	--serviceName=awards \
 	--serviceURL=https://awards-dot-jll-apollo-test.uc.r.appspot.com
 
+publish:
+	rover subgraph publish jesse-test-1xc6kq@current --schema ./schema.graphql \
+		--name awards --routing-url https://awards-dot-jll-apollo-test.uc.r.appspot.com
+
+
 deploy:
 	gcloud app deploy
 
