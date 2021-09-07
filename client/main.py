@@ -34,7 +34,7 @@ gql("query getAuthorsDetail { authors { name, books { title }, awards { awardNam
 gql("query getHomePageDetail { authors { name, books { title }, awards { awardName } }, books { title }, awards { awardName, title } }"),
 ]
 
-for i in range(random.randint(100,200)):
+for i in range(random.randint(50,100)):
     # Provide a GraphQL query
     query = random.choice(queries)
     #print(query)
