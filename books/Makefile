@@ -4,10 +4,11 @@ push:
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
 	--serviceName=books \
-	--serviceURL=https://books-dot-jll-apollo-test.uc.r.appspot.com
+	--serviceURL=https://books-dot-lovelace-presales-demo.ue.r.appspot.com
+
 publish:
 	rover subgraph publish jesse-test-1xc6kq@current --schema ./schema.graphql \
-		--name books --routing-url https://books-dot-jll-apollo-test.uc.r.appspot.com
+		--name books --routing-url https://books-dot-lovelace-presales-demo.ue.r.appspot.com
 
 deploy:
 	gcloud app deploy
@@ -17,10 +18,10 @@ check:
 	--localSchemaFile=schema.graphql \
 	--graph=jesse-test-1xc6kq \
 	--variant=current \
-	--serviceName=books
+	--serviceName=books 
 #	--validationPeriod=20736000 
 
 rcheck:
 	rover subgraph check jesse-test-1xc6kq \
 	--schema=schema.graphql \
-	--name=books 
+	--name=books --validation-period=2w

@@ -47,6 +47,22 @@ function fetchBooksForAuthor(author) {
   //logger.info("Books found: " + booksFound.length);
   return booksFound;
 }
+
+function fetchBooksForDatum(datum) {
+  //logger.info('Fetch books for author: ' + author);
+  //logger.info(books);
+  var booksFound = [];
+  for (var i = 0; i < 20; i++) {
+    booksFound.push(
+      {
+        "title": "My Book " + i ,
+        "author": "Datum " + datum._id,
+        "published_date": "10 July 2018"
+      });
+  }
+  //logger.info("Books found: " + booksFound.length);
+  return booksFound;
+}
   
 // Resolvers define the technique for fetching the types defined in the
 // schema. This resolver retrieves books from the "books" array above.
@@ -57,6 +73,11 @@ const resolvers = {
     Author: {
       books(author) {
         return fetchBooksForAuthor(author.name);
+      }
+    },
+    Datum: {
+      books(datum) {
+        return fetchBooksForDatum(datum._id);
       }
     }
   };

@@ -14,7 +14,7 @@ versions = ['1.0', '1.1', '1.2']
 
 # Select your transport with a defined url endpoint
 transport = RequestsHTTPTransport(
-    url="https://jll-apollo-test.uc.r.appspot.com/", 
+    url="https://lovelace-presales-demo.ue.r.appspot.com", 
     headers={
         'apollographql-client-name': random.choice(client_name),
         'apollographql-client-version': random.choice(versions)
@@ -29,7 +29,7 @@ gql("query getAwards { awards { awardTitle, awardName, year }}"),
 gql("query getAwardName { awards { awardName }}"),
 gql("query getAwardDetails { awards { awardName, title }}"),
 gql("query getAuthors { authors { name, yearBorn, biography }}"),
-gql("query getBooks { books { title, author, publisher }}"),
+gql("query getBooks { books { titles, author, publisher }}"),
 gql("query getAuthorsDetail { authors { name, books { title }, awards { awardName } }}"),
 gql("query getHomePageDetail { authors { name, books { title }, awards { awardName } }, books { title }, awards { awardName, title } }"),
 ]

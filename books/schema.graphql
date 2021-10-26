@@ -1,4 +1,9 @@
-# Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
+# You must include this definition in any schema with tags!
+directive @tag(name: String!) repeatable on
+  | FIELD_DEFINITION
+  | INTERFACE
+  | OBJECT
+  | UNION
 
 # This "Book" type defines the queryable fields for every book in our data source.
 " A book (work of literature)."
@@ -10,7 +15,9 @@ type Book @key(fields: "title") @key(fields: "author") {
     " Who published the book. "
     publisher: String
     " The publication date. "
-    published_date: String
+    published_date: String 
+    " The ISBN for a book. "
+    isbn: String @tag(name: "private")
 }
 
 extend type Author @key(fields: "name") {

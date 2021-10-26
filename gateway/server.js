@@ -1,51 +1,43 @@
 import { ApolloGateway, RemoteGraphQLDataSource } from "@apollo/gateway";
 import { ApolloServer } from "apollo-server";
-///import { createLogger } from "bunyan";
-///import { LoggingBunyan } from "@google-cloud/logging-bunyan";
+import { bootstrap } from 'global-agent';
 import { ApolloServerPluginInlineTrace } from "apollo-server-core";
 import  dotenv  from "dotenv";
+import fetch from "make-fetch-happen";
 
-
-// Creates a Bunyan Cloud Logging client
-//const loggingBunyan = new LoggingBunyan();
-
-// Create a Bunyan logger that streams to Cloud Logging
-// Logs will be written to: "projects/YOUR_PROJECT_ID/logs/bunyan_log"
-/*const logger = createLogger({
-  // The JSON payload of the log as it appears in Cloud Logging
-  // will contain "name": "my-service"
-  name: 'apollo-gateway',
-  streams: [
-    // Log to the console at 'info' and above
-    {stream: process.stdout, level: 'info'},
-    // And log to Cloud Logging, logging at 'info' and above
-    loggingBunyan.stream('info'),
-  ],
-});*/
+//console.log(process.env.GLOBAL_AGENT_HTTP_PROXY);
+//console.log(process.env.GLOBAL_AGENT_HTTPS_PROXY);
+//bootstrap();
 
 class AuthenticatedDataSource extends RemoteGraphQLDataSource {
   willSendRequest({ request, context }) {
-    request.http.headers.set('x-apollo-tracing', 1);
+    request.http.headers.set('apiKey', 'Y7Lp2iwJqbw3WwqT7lqhGBFIrrVB7NodeKYkD4VXTQsZMPJ0n0fnsQ5w1VT7DpzC');
   }
 }
 
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
-const APOLLO_KEY = process.env.APOLLO_KEY || 4000;
+const APOLLO_KEY = process.env.APOLLO_KEY;
+
+//global.GLOBAL_AGENT.HTTP_PROXY = 'https://127.0.0.1:9090';
 
 const gateway = new ApolloGateway({
   buildService({ name, url }) {
-    console.log("Build service: " + url);
     return new AuthenticatedDataSource({ url });
   },
 });
 
 const server = new ApolloServer({
   gateway,
-  debug: true,
-  introspection: true, // Not for prod
-  playground: true, // Not for prod
+  context: ({ req }) => {
+    // Get the Mongo API Key from the headers
+    const apiKey = req.headers.apiKey || '';
+    return { apiKey };
+  },
+  debug: false,
+  introspection: false, // Not for prod
+  playground: false, // Not for prod
   subscriptions: false,
   
   //logger: logger,
@@ -54,5 +46,4 @@ const server = new ApolloServer({
 
 server.listen({ port: PORT }).then(({ url }) => {
   console.log(`Server ready at ${url}`);
-  console.log(`Server ready at ${APOLLO_KEY}`);
 }); 
