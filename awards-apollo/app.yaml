@@ -3,3 +3,10 @@ service: awards
 
 env_variables:
   APOLLO_SCHEMA_REPORTING: "false"
+automatic_scaling:
+  target_cpu_utilization: 0.80
+  min_instances: 0
+  max_instances: 2
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+  max_concurrent_requests: 50

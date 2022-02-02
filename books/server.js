@@ -31,7 +31,7 @@ dotenv.config();
 // A schema is a collection of type definitions (hence "typeDefs")
 // that together define the "shape" of queries that are executed against
 // your data.
-const typeDefs = gql(fs.readFileSync('schema.graphql', 'utf8'))
+const schema = gql(fs.readFileSync('schema.graphql', 'utf8'))
 
 const books = require('./books.json');
 
@@ -85,8 +85,7 @@ const resolvers = {
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
 const server = new ApolloServer({ 
-  schema: buildFederatedSchema([{ typeDefs, resolvers }]),
-  plugins: [ApolloServerPluginInlineTrace()]
+  schema: buildFederatedSchema([{ typeDefs: schema, resolvers }])
 });
 
 const PORT = process.env.PORT || 8080;

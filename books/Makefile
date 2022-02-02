@@ -24,4 +24,4 @@ check:
 rcheck:
 	rover subgraph check jesse-test-1xc6kq \
 	--schema=schema.graphql \
-	--name=books --validation-period=2w
+	--name=books --validation-period=4weeks

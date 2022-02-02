@@ -20,8 +20,6 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 const APOLLO_KEY = process.env.APOLLO_KEY;
 
-//global.GLOBAL_AGENT.HTTP_PROXY = 'https://127.0.0.1:9090';
-
 const gateway = new ApolloGateway({
   buildService({ name, url }) {
     return new AuthenticatedDataSource({ url });
