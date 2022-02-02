@@ -1,5 +1,8 @@
 name: Client Query Test
-on: push
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/5 * * * *'
 jobs:
   Client-Query-Test:
     runs-on: ubuntu-latest
